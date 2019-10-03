@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb://localhost/entrazact",
+    "secret": "This is off limit to unauthorized users. Only admins have the priviledge to access this"
+}
