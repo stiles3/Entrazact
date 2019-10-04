@@ -118,6 +118,8 @@ router.post('/validate', (req, res) => {
           phonemain(req.body.phone)
           console.log("successfully sent to ", req.body.email)
           console.log("Successfully sent to ", req.body.phone)
+          return res.status(200).json({'Validate': "Success"})
+       
         }
       })
 })
