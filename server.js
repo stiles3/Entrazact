@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use(cors())
 app.use(passport.initialize())
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 require('./config/passport')(passport)
 
