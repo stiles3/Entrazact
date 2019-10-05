@@ -53,7 +53,7 @@ export const validate = params => dispatch => {
 //Login
 export const loginUser = userData => dispatch => {
   axios
-    .post('http://localhost:5000/api/users/login', userData)
+    .post('/api/users/login', userData)
     .then(res => {
       dispatch({
         type: LOGIN_SUCCESS,
@@ -69,7 +69,7 @@ export const loginUser = userData => dispatch => {
 //AdminLogin
 export const loginAdmin = (userData, history) => dispatch => {
   axios
-    .post('http://localhost:5000/api/users/login', userData)
+    .post('/api/users/login', userData)
     .then(res => {history.push('/admin')
       dispatch({
         type: ADMIN_LOGIN_SUCCESS,
